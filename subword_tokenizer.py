@@ -10,6 +10,7 @@ import re
 import numpy as np
 import os
 import io
+import sys
 import time, datetime
 import pickle
 
@@ -159,5 +160,5 @@ def tokenize(sentence):
 
 
 if __name__=='__main__':
-    if(sys.argv[1]):
+    if(len(sys.argv) > 1):
         print(tokenize(sys.argv[1]))
